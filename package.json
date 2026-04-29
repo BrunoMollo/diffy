@@ -4,9 +4,13 @@
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/git-diff-parser": "^1.0.4"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "git-diff-parser": "^1.0.0"
   }
 }

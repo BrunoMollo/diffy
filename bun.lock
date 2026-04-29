@@ -3,8 +3,12 @@
   "workspaces": {
     "": {
       "name": "diffy",
+      "dependencies": {
+        "git-diff-parser": "^1.0.0",
+      },
       "devDependencies": {
         "@types/bun": "latest",
+        "@types/git-diff-parser": "^1.0.4",
       },
       "peerDependencies": {
         "typescript": "^5",
@@ -14,9 +18,13 @@
   "packages": {
     "@types/bun": ["@types/bun@1.3.13", "", { "dependencies": { "bun-types": "1.3.13" } }, "sha512-9fqXWk5YIHGGnUau9TEi+qdlTYDAnOj+xLCmSTwXfAIqXr2x4tytJb43E9uCvt09zJURKXwAtkoH4nLQfzeTXw=="],
 
+    "@types/git-diff-parser": ["@types/git-diff-parser@1.0.4", "", { "dependencies": { "@types/node": "*" } }, "sha512-tQJ9Nyf30mULEadMtPwJGuI8ZEUrLG+uSHPH5RnFQdxUjM4+eirfoOUme6uHRVsqG8Neb8FDfDQaL9PcMhnRDQ=="],
+
     "@types/node": ["@types/node@25.6.0", "", { "dependencies": { "undici-types": "~7.19.0" } }, "sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ=="],
 
     "bun-types": ["bun-types@1.3.13", "", { "dependencies": { "@types/node": "*" } }, "sha512-QXKeHLlOLqQX9LgYaHJfzdBaV21T63HhFJnvuRCcjZiaUDpbs5ED1MgxbMra71CsryN/1dAoXuJJJwIv/2drVA=="],
+
+    "git-diff-parser": ["git-diff-parser@1.0.0", "", {}, "sha512-m6I3x7Amb759jXYDITS8M8GfdxV636ni2zV2/RrGtEMuH3CD45hbTFsTaVtmYsTsIQ3x7jibsOcFOqJvP6ptxg=="],
 
     "typescript": ["typescript@5.9.3", "", { "bin": { "tsc": "bin/tsc", "tsserver": "bin/tsserver" } }, "sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw=="],
 
